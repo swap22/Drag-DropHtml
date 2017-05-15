@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="custom.css">
 </head>
 <body>
-    <div id="space">
-        <h1>Drag the image on this block and drop it</h1>
+    <div id="space" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h1 id="note" contenteditable="true">Drag the image on this block and drop it.<br> And delete the content.</h1>
     </div>
-    <img src="image/1.jpg" alt="box image">
+    <img id="drag1" src="image/1.jpg" alt="box image" draggable="true" ondragstart="drag(event)">
     <script src="app.js"></script>
 </body>
 </html>
